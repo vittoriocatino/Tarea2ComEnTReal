@@ -1,7 +1,7 @@
 import { Router } from 'express';
-import { getUsers } from './controller';
+import { getUsers, uploadPic } from './controller';
 import { authMiddleware } from '../middlewares/auth';
-
+import {upload} from './../middlewares/upload'
 
 const router = Router();
 
@@ -25,5 +25,7 @@ const router = Router();
  *      description: missing token
  */
 router.get('', authMiddleware, getUsers)
+
+router.post('/profile', upload.single('imagen') ,uploadPic);
 
 export default router;

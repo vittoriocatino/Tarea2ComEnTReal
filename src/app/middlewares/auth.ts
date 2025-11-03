@@ -1,4 +1,4 @@
-import { IUser } from 'app/interfaces/user';
+import { IUser } from '../interfaces/user';
 import { Request, Response, NextFunction } from 'express';
 
 

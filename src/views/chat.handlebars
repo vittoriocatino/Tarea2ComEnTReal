@@ -1,0 +1,37 @@
+<div class="chat-container">
+    <div class="chat-box">
+        <div class="chat-header">
+            <div class="room-info">
+                <h2 id="roomName"></h2>
+                <p class="user-info">Usuario: <strong id="currentUsername"></strong></p>
+            </div>
+            <div class="header-actions">
+                <button id="leaveRoomBtn" class="btn-secondary">Salir de la Sala</button>
+                <button id="logoutBtn" class="btn-danger">Cerrar Sesión</button>
+            </div>
+        </div>
+        
+        <div class="users-online">
+            <span>👥 Usuarios en línea: <span id="userCount">0</span></span>
+        </div>
+
+        <div id="messagesContainer" class="messages-container">
+            <!-- Messages will be displayed here -->
+        </div>
+
+        <div class="message-input-container">
+            <form id="messageForm">
+                <input 
+                    type="text" 
+                    id="messageInput" 
+                    placeholder="Escribe tu mensaje..." 
+                    autocomplete="off"
+                    required
+                />
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script src="/static/js/chat.js"></script>

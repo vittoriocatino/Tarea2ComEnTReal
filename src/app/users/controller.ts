@@ -5,3 +5,8 @@ export function getUsers(req: Request, res: Response) {
     res.send([]);
 }
 
+export function uploadPic(req: Request, res: Response) {
+    res.send('ok');
+
+    
+}
